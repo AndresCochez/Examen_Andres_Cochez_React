@@ -9,7 +9,7 @@ const WelcomeScreen = ({ navigation }) => {
       {/* Grote tekst voor de app-naam */}
       <Text
         style={{
-          fontSize: 36,
+          fontSize: 50,
           fontWeight: "bold",
           color: "black",
           marginTop: 100,
