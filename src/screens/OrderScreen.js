@@ -21,8 +21,8 @@ const ChosenScreen = ({ navigation }) => {
 
       {/* Afbeelding van het mysteriepakket */}
       <Image
-        source={require("../../assets/images/mystery_package.png")}
-        style={{ width: 350, height: 350, borderRadius: 10, borderColor: "#d54e21", borderWidth: 5 }}
+        source={require("../../assets/images/mystery_package.jpg")}
+        style={{ width: 350, height: 350, borderRadius: 10, borderColor: "#1821A0", borderWidth: 5 }}
       />
 
       {/* Tekst met dankbaarheid en informatie over de bestelling */}
@@ -45,7 +45,7 @@ const ChosenScreen = ({ navigation }) => {
       <TouchableOpacity
         onPress={() => navigation.navigate("Home")}
         style={{
-          backgroundColor: "#d54e21",
+          backgroundColor: "#1821A0",
           borderRadius: 10,
           paddingVertical: 16,
           width: 350,

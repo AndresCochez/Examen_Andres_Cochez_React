@@ -11,7 +11,7 @@ const DetailScreen = ({ route }) => {
 
   // Render de component
   return (
-    <View style={{ backgroundColor: "#d54e21", flex: 1 }}>
+    <View style={{ backgroundColor: "#1821A0", flex: 1 }}>
       {/* Veilige weergavegebied voor iOS met lege bovenbalk */}
       <SafeAreaView style={{ flexDirection: "row", marginHorizontal: 16 }}>
       </SafeAreaView>
@@ -69,7 +69,7 @@ const DetailScreen = ({ route }) => {
           <TouchableOpacity
             onPress={() => navigation.navigate("Order")}
             style={{
-              backgroundColor: "#d54e21",
+              backgroundColor: "#1821A0",
               borderRadius: 10,
               paddingVertical: 16,
               width: 350,

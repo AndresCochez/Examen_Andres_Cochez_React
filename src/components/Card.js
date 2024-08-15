@@ -73,8 +73,8 @@ const Card = () => {
 
       {/* Knoppen voor het sorteren van de kaarten */}
       <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-        <Button title="Laagste" onPress={() => sortCards("asc")} color="black" />
-        <Button title="Hoogste" onPress={() => sortCards("desc")} color="black" />
+        <Button title="Lowest" onPress={() => sortCards("asc")} color="black" />
+        <Button title="Highest" onPress={() => sortCards("desc")} color="black" />
       </View>
 
       {/* FlatList voor het weergeven van het kaartenraster */}
@@ -90,7 +90,7 @@ const Card = () => {
               }
             }}
             style={{
-              backgroundColor: "#d54e24",
+              backgroundColor: "#1821A0",
               borderRadius: 10,
               marginVertical: 8,
               alignItems: "center",
@@ -115,7 +115,7 @@ const Card = () => {
               <FontAwesomeIcon
                 icon={faHeart}
                 size={item.isFavorite ? 20 : 20}
-                style={{ color: item.isFavorite ? "#8b0000" : "black" }}
+                style={{ color: item.isFavorite ? "white" : "black" }}
               />
             </Pressable>
 
@@ -132,8 +132,8 @@ const Card = () => {
             </Pressable>
 
             {/* Tekstcomponenten voor het weergeven van kaartnaam en prijs */}
-            <Text>{item.name}</Text>
-            <Text>{"€" + item.price}</Text>
+            <Text style={{ color: "white" }}>{item.name}</Text>
+            <Text style={{ color: "white" }}>{"€" + item.price}</Text>
           </Pressable>
         )}
         numColumns={2}

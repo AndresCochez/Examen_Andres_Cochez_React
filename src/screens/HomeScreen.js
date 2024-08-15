@@ -12,7 +12,7 @@ const HomeScreen = () => {
       {/* Veilige weergavegebied voor iOS met marge aan de zijkanten */}
       <View style={{ marginTop: 22, flex: 1 }}>
         {/* Tekstkop voor het startscherm */}
-        <Text style={{ fontSize: 22, fontWeight: "bold" }}>Choose your Mystery Package!</Text>
+        <Text style={{ fontSize: 22, fontWeight: "bold" }}>Choose your Car!</Text>
         
         {/* Card-component voor het weergeven van kaarten */}
         <Card />

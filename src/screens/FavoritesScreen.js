@@ -21,7 +21,7 @@ const FavoritesScreen = ({ route }) => {
           // Container voor elk favoriet item met specifieke stijl
           <View
             style={{
-              backgroundColor: "#d54e24",
+              backgroundColor: "#1821A0",
               borderRadius: 10,
               marginVertical: 8,
               alignItems: "center",
@@ -36,10 +36,10 @@ const FavoritesScreen = ({ route }) => {
             <Image source={item.image} style={{ width: 150, height: 180, resizeMode: "center" }} />
             
             {/* Naam van het favoriete item */}
-            <Text>{item.name}</Text>
+            <Text style={{ color: "white" }}>{item.name}</Text>
 
             {/* Prijs van het favoriete item met voorwaardelijke weergave */}
-            <Text>{"€" + (item.price ? item.price.toString() : "N/A")}</Text>
+            <Text style={{ color: "white" }}>{"€" + (item.price ? item.price.toString() : "N/A")}</Text>
           </View>
         )}
         keyExtractor={(item) => (item.id ? item.id.toString() : Math.random().toString())}

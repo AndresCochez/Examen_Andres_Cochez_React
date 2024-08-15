@@ -16,13 +16,13 @@ const WelcomeScreen = ({ navigation }) => {
           marginBottom: 20,
         }}
       >
-        Mystery Package
+        carshop.
       </Text>
 
       {/* Afbeelding van het mysteriepakket */}
       <Image
-        source={require("../../assets/images/mystery_package.png")}
-        style={{ width: 350, height: 350, borderRadius: 10, borderColor: "#d54e21", borderWidth: 5 }}
+        source={require("../../assets/images/mystery_package.jpg")}
+        style={{ width: 350, height: 350, borderRadius: 10, borderColor: "#1821A0", borderWidth: 5 }}
       />
 
       {/* Tekst met uitleg over de app */}
@@ -38,14 +38,14 @@ const WelcomeScreen = ({ navigation }) => {
           textAlign: "justify",
         }}
       >
-        Welcome to our Mystery Food App! Embark on a culinary adventure with our surprise food packages. Let the flavors unfold and the excitement begin!
+        Welcome to our Auto App! Explore a world of reliable used cars and find your perfect vehicle. Compare models and be amazed by the options. Your next car is waiting for you!
       </Text>
 
       {/* Knop voor navigatie naar het startscherm */}
       <TouchableOpacity
         onPress={() => navigation.navigate("Home")}
         style={{
-          backgroundColor: "#d54e21",
+          backgroundColor: "#1821A0",
           borderRadius: 10,
           paddingVertical: 16,
           width: 350,
